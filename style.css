@@ -1,11 +1,11 @@
 :root{
-  --bg:#0f1115;
-  --panel:#171a21;
-  --key:#222633;
-  --key-op:#2a3452;
+  --bg:#f6f7fb;
+  --panel:#ffffff;
+  --key:#f0f3fa;
+  --key-op:#e9efff;
   --key-eq:#4f7cff;
-  --text:#eef2ff;
-  --muted:#9aa4b2;
+  --text:#000000;
+  --muted:#000000;
   --accent:#4f7cff;
 }
 *{box-sizing:border-box}
@@ -13,7 +13,7 @@ html,body{height:100%}
 body{
   margin:0;
   font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  background:linear-gradient(120deg,#0f1115 0%, #111827 60%, #0f1115 100%);
+  background:linear-gradient(120deg,#f7f9ff 0%, #eef2ff 60%, #f7f9ff 100%);
   color:var(--text);
   display:grid;place-items:center;
 }
@@ -29,16 +29,16 @@ h1{font-size:20px;font-weight:600;color:var(--muted);letter-spacing:.3px;margin:
 .display{
   display:block;
   height:72px;
-  background:#0c0f14;
-  color:#e8eefc;
+  background:#f6f8ff;
+  color:#000000;
   border-radius:12px;
   padding:16px;
   font-variant-numeric:tabular-nums;
   font-size:32px;line-height:40px;
   text-align:right;
   overflow:hidden;
-  border:1px solid #1b1f2a;
-  box-shadow:inset 0 2px 10px rgba(0,0,0,.35);
+  border:1px solid #e8ecf6;
+  box-shadow:inset 0 2px 5px rgba(0,0,0,.04);
 }
 .keys{
   margin-top:12px;
@@ -63,9 +63,9 @@ button[data-action="clear"],button[data-action="delete"]{background:#2b2f3c}
 .hint{color:var(--muted);font-size:12px;margin:12px 6px 0}
 
 @media (prefers-color-scheme: light){
-  :root{--bg:#f6f7fb;--panel:#ffffff;--key:#f0f3fa;--key-op:#e9efff;--key-eq:#4f7cff;--text:#0b1220;--muted:#6b7280}
+  :root{--bg:#f6f7fb;--panel:#ffffff;--key:#f0f3fa;--key-op:#e9efff;--key-eq:#4f7cff;--text:#000000;--muted:#000000}
   body{background:linear-gradient(120deg,#f7f9ff 0%, #eef2ff 60%, #f7f9ff 100%)}
-  .display{background:#f6f8ff;color:#0d1526;border-color:#e8ecf6;box-shadow:inset 0 2px 5px rgba(0,0,0,.04)}
+  .display{background:#f6f8ff;color:#000000;border-color:#e8ecf6;box-shadow:inset 0 2px 5px rgba(0,0,0,.04)}
   .calculator{border-color:#e9edf6;box-shadow:0 10px 30px rgba(0,0,0,.05), inset 0 0 0 1px rgba(0,0,0,.02)}
   button{box-shadow:0 4px 10px rgba(0,0,0,.07), inset 0 0 0 1px rgba(0,0,0,.04)}
 }

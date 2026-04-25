@@ -10,3 +10,4 @@ Quick start: open index.html in a browser.
 
 License: MIT
 
+Live demo (GitHub Pages): https://agentictimur-sudo.github.io/web-calculator/

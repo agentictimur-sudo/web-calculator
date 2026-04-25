@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Calculator</h1>
+
+      <div class="calculator" role="application" aria-label="Calculator">
+        <output id="display" class="display" aria-live="polite">0</output>
+
+        <div class="keys" id="keys">
+          <button data-action="clear" title="Clear (C)">C</button>
+          <button data-action="delete" title="Delete (Backspace)">⌫</button>
+          <button data-action="operator" data-operator="/" title="Divide (/)">÷</button>
+          <button data-action="operator" data-operator="*" title="Multiply (*)">×</button>
+
+          <button data-digit>7</button>
+          <button data-digit>8</button>
+          <button data-digit>9</button>
+          <button data-action="operator" data-operator="-" title="Minus (-)">−</button>
+
+          <button data-digit>4</button>
+          <button data-digit>5</button>
+          <button data-digit>6</button>
+          <button data-action="operator" data-operator="+" title="Plus (+)">+</button>
+
+          <button data-digit>1</button>
+          <button data-digit>2</button>
+          <button data-digit>3</button>
+          <button class="eq" data-action="equals" title="Equals (=)">=</button>
+
+          <button class="zero" data-digit>0</button>
+          <button data-action="decimal">.</button>
+        </div>
+      </div>
+
+      <p class="hint">Tip: You can also type on your keyboard (0–9, + − × ÷ or */-, Enter, Backspace).</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+

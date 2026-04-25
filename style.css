@@ -47,19 +47,19 @@ h1{font-size:20px;font-weight:600;color:var(--muted);letter-spacing:.3px;margin:
   gap:10px;
 }
 button{
-  appearance:none;border:0;cursor:pointer;
-  padding:16px;border-radius:12px;
-  background:var(--key);color:#000;
+  appearance:none;cursor:pointer;
+  padding:16px;border-radius:12px;border:1px solid #e5e7eb;
+  background:#ffffff;color:#000000;
   font-size:18px;font-weight:600;
-  box-shadow:0 4px 12px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.03);
-  transition:transform .04s ease, filter .12s ease, background .2s ease;
+  box-shadow:0 4px 10px rgba(0,0,0,.06);
+  transition:transform .04s ease, filter .12s ease, background .2s ease, border-color .2s ease;
 }
 button:hover{filter:brightness(1.07)}
 button:active{transform:translateY(1px)}
-button[data-action="operator"]{background:var(--key-op)}
-.eq{background:var(--key-eq)}
+button[data-action="operator"]{background:#ffffff}
+.eq{background:#ffffff}
 .zero{grid-column:span 3}
-button[data-action="clear"],button[data-action="delete"]{background:#2b2f3c}
+button[data-action="clear"],button[data-action="delete"]{background:#ffffff}
 .hint{color:var(--muted);font-size:12px;margin:12px 6px 0}
 
 @media (prefers-color-scheme: light){

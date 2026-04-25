@@ -48,18 +48,18 @@ h1{font-size:20px;font-weight:600;color:var(--muted);letter-spacing:.3px;margin:
 }
 button{
   appearance:none;cursor:pointer;
-  padding:16px;border-radius:12px;border:1px solid #e5e7eb;
+  padding:16px;border-radius:12px;border:1px solid #cbd5e1;
   background:#ffffff;color:#000000;
-  font-size:18px;font-weight:600;
-  box-shadow:0 4px 10px rgba(0,0,0,.06);
-  transition:transform .04s ease, filter .12s ease, background .2s ease, border-color .2s ease;
+  font-size:18px;font-weight:700;
+  box-shadow:0 2px 6px rgba(0,0,0,.06);
+  transition:transform .04s ease, background .12s ease, border-color .12s ease;
 }
-button:hover{filter:brightness(1.07)}
-button:active{transform:translateY(1px)}
-button[data-action="operator"]{background:#ffffff}
-.eq{background:#ffffff}
+button:hover{background:#f3f4f6;border-color:#94a3b8}
+button:active{transform:translateY(1px);background:#e5e7eb}
+button[data-action="operator"]{background:#ffffff;color:#000000}
+.eq{background:#2563eb;color:#ffffff;border-color:#1d4ed8}
 .zero{grid-column:span 3}
-button[data-action="clear"],button[data-action="delete"]{background:#ffffff}
+button[data-action="clear"],button[data-action="delete"]{background:#111827;color:#ffffff;border-color:#0b1220}
 .hint{color:var(--muted);font-size:12px;margin:12px 6px 0}
 
 @media (prefers-color-scheme: light){
